@@ -3,7 +3,10 @@ import { Volume2, Check, X, RefreshCw, Award, BookOpen, Plus, Search, ChevronLef
 
 // --- 1. 本地词典数据 (模拟一个内置的大词库) ---
 // 您可以随时扩充这个列表，或者从 JSON 文件导入
-const LOCAL_DICTIONARY = [
+import fullDictionary from './dictionary_full';
+const LOCAL_DICTIONARY = fullDictionary;
+
+/*const LOCAL_DICTIONARY = [
   { word: "ambitious", ipa: "/æm'bɪʃəs/", meaning: "有野心的；费力的" },
   { word: "candidate", ipa: "/'kændɪdət/", meaning: "候选人；应试者" },
   { word: "prospect", ipa: "/'prɒspekt/", meaning: "前景；预期；可能性" },
@@ -64,7 +67,7 @@ const LOCAL_DICTIONARY = [
   { word: "role", ipa: "/rəʊl/", meaning: "角色；任务" },
   { word: "section", ipa: "/'sekʃn/", meaning: "部分；部门；章节" },
   { word: "sector", ipa: "/'sektə(r)/", meaning: "部门；领域；扇形" },
-];
+];*/
 
 // --- 2. 记忆曲线配置 ---
 const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30, 60];
